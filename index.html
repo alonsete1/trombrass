@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las orquestas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="java.js">
+    <link rel="stylesheet" href="jquery.JS">
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagen/logotipo.png" alt=""> 
+        <h1>Trombrass</h1>
+        <a href="saber mas.html">Saber mas</a>   
+        <a href="Cuestionario.html">Cuestionario</a>
+    </header>
+
+    <h2>¿QUÉ APRENDERÉ AQUÍ?</h2>
+    <p>Aqui aprenderas un poco sobre las orquestas, diferencia en sinfonica y filarmonica; instrumentos sinfonicos y <br>muchas mas curiosidades sobre las orquestas</p>
+    <a href="https://youtu.be/IplQz7TnSiI?si=YKqXyg4Z3M05af9W" target="_blank">
+    <center><img class="orquesta" src="imagen/230620205416Alcazar-1024x534.jpg" alt=""></center>
+</a>
+<center>
+</div>
+<form name="formulariocontacto" method="get" action="inicio de sesion.html" style="color: white;">
+    <h2>Inicia Sesión</h2>
+    <label>Nombre: <input id="NombreFormContacto" type="text" name="nombre"></label>
+    <br><br>
+    <label>Apellidos: <input id="apellidosFormContacto" type="text" name="apellidos"></label>
+    <br><br>
+    <label>Correo Electronico: <input id="correo" type="email" name="correo"></label>
+    <br><br>
+    <label>Fecha de nacimiento: <input type="date" id="start" name="trip-start" value="2024-01-01" min="0000-00-00" max="2006-1-22" /></label>
+    <br><br>
+    <b>Estoy de acuerdo con las condiciones de privacidad</b><input type="checkbox" onclick="privacidades()" value="privacidad"  name="privacidad" id="privacidad"> <br>
+        <script>
+            function privacidades(){
+            var elemento = document.getElementById("privacidad");
+            alert("Selección: " + elemento.value + "\n Seleccion: " + elemento.checked);
+        }
+        </script>
+         <b>Acepto las cookies</b><input type="checkbox" onclick="cookies()" value="cookie"  name="cookie" id="cookie"> <br><br>
+         <script>
+             function cookies(){
+             var elemento = document.getElementById("cookie");
+             alert("Selección: " + elemento.value + "\n Seleccion: " + elemento.checked);
+         }
+         </script>
+    <label><input id="envio2" type="submit" value="Enviar"></label>
+
+</form>
+</center>
+</body>
+</html>

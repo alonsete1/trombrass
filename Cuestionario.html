@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las orquestas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="java.js">
+    <link rel="stylesheet" href="jquery.JS">
+
+</head>
+<body>
+    <header>
+    <img class="logo" src="imagen/logotipo.png" alt=""> <h1>Trombrass</h1>
+        <a href="index.html">Inicio</a>    
+        <a href="saber mas.html">Saber mas</a></header>
+        <h2>¿QUE HE APRENDIDO?</h2>
+        <h3 class="preguntas">¿Cual de estos intrumentos NO es sinfonico?</h3>
+        <center>
+        <div class="botones">
+        <button onclick="alert('Error, el trombon es un instrumento crucial en las orquestas, miembro de los vientos metales')"><b>Trombon</b></button>
+        <button onclick="alert('Error, aunque parezca una tonteria, el triangulo es un instrumento de la familia de la percusion y muchas veces es lo que le da sentido a la musica')"><b>Triangulo</b></button>
+        <button onclick="alert('Error, la trompeta pertenece a los vientos metalesy es super importante ya que a veces inclusio tienen solo en las obras')"><b>Trompeta</b></button>
+        <button onclick="alert('Bien!!!, aunque el acordeon sea uno de los instrumentos mas dificiles de dominar no es un intrumento sinfonico')"><b>Acordeon</b</button>
+        </div><br><br>
+        <h3 class="preguntas">¿Que diferencia hay entre una sinfonica y una filarmonica?</h3>
+        <div class="inputs">
+        <input type="checkbox" onclick="verdadera()" value="verdadero" name="verdadero" id="verdadero" >La sinfonica es asociada a musica sinfonica y opera, mientras que la filarmonica a musica del siglo XIX 
+        <script>
+            function verdadera(){
+                var elemento = document.getElementById("verdadero");
+                alert('has acertado!')
+            }
+        </script><br>
+        <input  type="checkbox" onclick="falso()" value="falsa" name="falsa" id="falsa">En las sinfonicas tambien hay instrumentos como el acordeon mientras que en las filarmonicas no <br><br><br>
+        <script>
+            function falso(){
+                var elemento = document.getElementById("falsa");
+                alert('Error, esta no es la respuesta correcta');
+            }
+        </script>
+        </div>
+        <button class="pregunta" onclick="pregunta()">Pregunta</button></center>
+        <script>
+        function pregunta() {
+            var respuesta = prompt("¿Cómo se llama el palito que utiliza el director para dirigir a los músicos?");
+            if (respuesta.toLowerCase() === "batuta") {
+            alert("Has acertado!!!!!!!");
+        }
+            else {
+            alert("Ohhhh has fallado, la respuesta correcta era BATUTA");
+        }}
+    </script>
+    <center>
+    <img class="batuta" style="width: 150px; padding-top: 30px;" src="imagen/batuta-pickboy-180-mh-w-maple-shaft.jpg" alt=""></center>
+</body>
+</html>
